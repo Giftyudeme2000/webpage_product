@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- Dropdown Nav with Nested Lists -->
+                <li class="dropdown">
+                    <a href="products.html" aria-current="page">Products ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#software">Software</a></li>
+                        <li><a href="#hardware">Hardware</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Breadcrumb Trail -->
+        <nav aria-label="Breadcrumb">
+            <ol>
+                <li><a href="home.html">Home</a></li>
+                <li aria-current="page">Products</li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Products & HTML Reference</h1>
+        
+        <!-- Download Link to PDF -->
+        <section id="download-section">
+            <h2>Product Catalog</h2>
+            <p>Download our complete reference sheet: 
+                <a href="catalog.pdf" download="product-catalog.pdf">Download Catalog (PDF)</a>
+            </p>
+        </section>
+
+        <!-- Description List for 4 HTML Tags with MDN Links -->
+        <section id="html-tags">
+            <h2>Useful HTML Tags Reference</h2>
+            <dl>
+                <dt><a href="https://mozilla.org" target="_blank" rel="noopener"><code>&lt;nav&gt;</code></a></dt>
+                <dd>Represents a section of a page whose purpose is to provide navigation links.</dd>
+
+                <dt><a href="https://mozilla.org" target="_blank" rel="noopener"><code>&lt;dl&gt;</code></a></dt>
+                <dd>Represents a description list, enclosing groups of terms and descriptions.</dd>
+
+                <dt><a href="https://mozilla.org" target="_blank" rel="noopener"><code>&lt;a&gt;</code></a></dt>
+                <dd>Creates a hyperlink to web pages, files, email addresses, or locations on the same page.</dd>
+
+                <dt><a href="https://mozilla.org" target="_blank" rel="noopener"><code>&lt;footer&gt;</code></a></dt>
+                <dd>Represents a footer for its nearest ancestor sectioning content or sectioning root element.</dd>
+            </dl>
+        </section>
+    </main>
+
+    <!-- Footer Navigation -->
+    <footer>
+        <hr>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="mailto:info@example.com">Email Us</a></li>
+                <li><a href="tel:+1234567890">Call Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
